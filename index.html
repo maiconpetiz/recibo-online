@@ -5,14 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emissão de Recibos</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="recibo-online.js"></script>
 </head>
 <body>
-    <div class="recibo">RECIBO</div>
-    <div class="form">
-        Nome do(a) paciente: <input type="text" id="paciente">
-        Valor da sessão: <input type="number" id="valor" step="0.01">
-        Nº de sessões: <input type="number" id="qtde">
+    <div class="recibo">
+        <h1 id="titulo">Recibo Online</h1>
     </div>
+    <form>
+        <fieldset class="formulario">
+            <div>
+                <label>Nome do Paciente:</label>
+                <br>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div>
+                <label>Valor da sessão R$:</label>
+                <br>
+                <input type="number" name="valor" id="valor" step="0,01">
+            </div>
+            <div>
+                <label>Qtde de sessões:</label>
+                <br>
+                <input type="number" name="qtde" id="qtde">
+            </div>
+            <div>
+                <label>Local de atendimento:</label>
+                <br>
+                <select id="local">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Cachoeirinha</option>
+                    <option>Gravataí</option>
+                    <option>Online (vídeo chamada)</option>
+                </select>
+                <br/> 
+                <button type="button" onclick="gerarRecibo()" id="btn">Gerar Recibo</button>
+            </div>
+          
+            <div class="print">
+                <h1>Recibo</h1>
+                <p> Eu, psicóloga <span class="negrito">Maiara Petiz</span> declaro que recebi de <span id="nome_paciente"></span> o valor de <span class="negrito">R$</span> <span id="valor_total"></span> referente à <span id="qtd"></span> <span class="negrito">sessão(ões).</span></p>
+            </div>
+        </fieldset>
+    </form>
+
     
     
 </body>

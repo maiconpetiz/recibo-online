@@ -1,0 +1,27 @@
+.print {
+    display: none;
+}
+
+body {
+    background-color: #c48778;
+    width: 100%;
+    display: block;
+    justify-content: center;
+
+}
+
+#titulo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 2em;
+    color: #90353b
+}
+
+input, select {
+    width: 90%;
+    display: block;
+    margin: auto;
+    max-width: 700px;  
+}
