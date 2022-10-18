@@ -4,7 +4,7 @@
 
 body {
     background-color: #c48778;
-    width: 100%;
+
     display: block;
     justify-content: center;
 
@@ -19,9 +19,69 @@ body {
     color: #90353b
 }
 
-input, select {
-    width: 90%;
+form {
     display: block;
+    width: 90%;
+    max-width: 500px;
     margin: auto;
-    max-width: 700px;  
+    padding: 7px;
+
+}
+
+fieldset {
+    color: #90353b;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: block;
+    align-items: center;
+    width: 100%;;    
+}
+
+input, select, button {
+    width: 100%;
+    padding: 0;
+    border: 0;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    height: 30px;
+    border-radius: 10px;
+    color: #90353b;
+    font-size: 1.2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    
+}
+
+button{
+    font-size: 1.2em;
+    background: #90353b;
+    color: #c48778;
+    border: solid 1px #90353b;
+}
+
+button:hover {
+    background: #c48778;
+    color: #90353b
+    
+
+}
+
+label {
+    margin-bottom: 25px;
+}
+
+.footer-box {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%);        
+}
+
+.footer-box li {
+   
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: white
 }

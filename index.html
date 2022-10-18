@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,49 +9,60 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <script src="recibo-online.js"></script>
+    <script src="https://kit.fontawesome.com/a7719daf75.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="recibo">
         <h1 id="titulo">Recibo Online</h1>
     </div>
     <form>
-        <fieldset class="formulario">
-            <div>
-                <label>Nome do Paciente:</label>
-                <br>
-                <input type="text" name="nome" id="nome">
-            </div>
-            <div>
-                <label>Valor da sessão R$:</label>
-                <br>
-                <input type="number" name="valor" id="valor" step="0,01">
-            </div>
-            <div>
-                <label>Qtde de sessões:</label>
-                <br>
-                <input type="number" name="qtde" id="qtde">
-            </div>
-            <div>
-                <label>Local de atendimento:</label>
-                <br>
-                <select id="local">
-                    <option selected disabled value="">Selecione</option>
-                    <option>Cachoeirinha</option>
-                    <option>Gravataí</option>
-                    <option>Online (vídeo chamada)</option>
-                </select>
-                <br/> 
-                <button type="button" onclick="gerarRecibo()" id="btn">Gerar Recibo</button>
-            </div>
-          
-            <div class="print">
-                <h1>Recibo</h1>
-                <p> Eu, psicóloga <span class="negrito">Maiara Petiz</span> declaro que recebi de <span id="nome_paciente"></span> o valor de <span class="negrito">R$</span> <span id="valor_total"></span> referente à <span id="qtd"></span> <span class="negrito">sessão(ões).</span></p>
-            </div>
+        <fieldset>
+            <label>Nome do Paciente:</label>
+            <br>
+            <input type="text" name="nome" id="nome">
+            <br>
+            <label>Valor da sessão R$:</label>
+            <br>
+            <input type="number" name="valor" id="valor" step="0,01">
+            <br>
+            <label>Qtde de sessões:</label>
+            <br>
+            <input type="number" name="qtde" id="qtde">
+            <br>
+            <label>Local de atendimento:</label>
+            <br>
+            <select id="local">
+                <option selected disabled value="">Selecione</option>
+                <option>Cachoeirinha</option>
+                <option>Gravataí</option>
+                <option>Online (vídeo chamada)</option>
+            </select>
+            <br />
+            <br>
+            <button type="button" onclick="gerarRecibo()" id="btn">Gerar Recibo</button>
         </fieldset>
-    </form>
 
-    
-    
+        <div class="print">
+            <h1>Recibo</h1>
+            <p> Eu, psicóloga <span class="negrito">Maiara Petiz</span> declaro que recebi de <span
+                    id="nome_paciente"></span> o valor de <span class="negrito">R$</span> <span id="valor_total"></span>
+                referente à <span id="qtd"></span> <span class="negrito">sessão(ões).</span></p>
+        </div>
+    </form>
+    <footer>
+        <div class="footer-box">
+            <h1>Desenvolvido por:</h1>
+            <h2>Maicon Petiz</h2>
+            <ul class="socials">
+                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+
 </body>
+
 </html>
